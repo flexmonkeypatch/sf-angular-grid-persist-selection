@@ -29,10 +29,15 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.pageSettings = { pageCount: 5 };
+        this.data = data;
   }
 
-  public loadData() {
+  public clearData() {
     this.data = [];
-    this.data = data;
+
+  }
+  public loadData() {
+        this.data = data;
+
   }
 }
