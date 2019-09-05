@@ -2,6 +2,7 @@
     <ejs-grid #grid [dataSource]='data' allowPaging='true' [pageSettings]='pageSettings' [selectionSettings]="selectionSettings"
     (selectstart)="onSelectStart($event)">
         <e-columns>
+          <e-column type='checkbox' width='0'></e-column>
             <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' [isPrimaryKey]="true"></e-column>
             <e-column field='CustomerName' headerText='Customer Name' width='150'></e-column>
             <e-column field='OrderDate' headerText='Order Date' width='130' format="yMd" textAlign='Right'></e-column>
